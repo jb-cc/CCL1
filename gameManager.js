@@ -10,7 +10,7 @@ class GameManager {
   constructor() {
     window.gameManager = this;
     window.gravityHelper = new GravityHelper();
-    window.mouseHelper = new MouseHelper();
+    // window.mouseHelper = new MouseHelper();
     console.log("gameManager created");
   }
 
@@ -63,7 +63,7 @@ class GameManager {
                 gameObject.isFalling = true;
               }
             }
-            mouseHelper.checkObjectMouseEvent(gameObject);
+            // mouseHelper.checkObjectMouseEvent(gameObject);
 
             //gameObject.rotate();
             gameObject.draw();
@@ -72,7 +72,7 @@ class GameManager {
         }
       });
     }
-    mouseHelper.recentMouseEvent = 0;
+    // mouseHelper.recentMouseEvent = 0;
     requestAnimationFrame(gameManager.gameLoop);
   }
 }
