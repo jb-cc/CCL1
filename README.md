@@ -1,5 +1,8 @@
 # Mutiny - CCL1
 
+## Play the game here:
+[https://ccl1.jonasbeer.com/](https://ccl1.jonasbeer.com/)
+
 ## Description
 
 "Mutiny" is the game I created for the first "Creative Code Lab" - Two weeks, in which I used all of my knowledge I acquired over my first semester of the study program Creative Computing.
@@ -59,7 +62,11 @@ This baseline of code, however, was only used for the jump-and-run part of my ga
 my most important classes and what they do:
 
 ```Enemy``` (modified) --> For the fighting system I implemented a range check, so that in a range of 300 the enemys can detect the player and walk towards him with a randomized speed, and start attacking and damaging the player when in a smaller range of 25. I also added other necessities for the fighting system, which I will go in detail later on
+
+
 ```PlayerFigure``` (modified) --> implemented a range check so that the range for the player is a bit bigger than the one of the enemies, a health counter and general necessities for the fighting system, as well as a coin counter. The gravity was changed a bit so that the jump and run is possible, without being too easy (some say it's too hard now, but I say it's a skill issue)
+
+
 ```Ladder``` --> The ladders were the biggest challenge to me. I had to find a way to disable the normal movement while on a ladder, and giving it back when not on a ladder. In the end I solved it by creating a new class called Ladder, and a new class ```GravityBlock```. When the Player collides with the ladder, the gravity gets disables for the player, and he can now effectively float. I also changed how the "W" key in the ```InputHandling``` works, so that it is now dependent on if there is gravity or not. With the Gravity Block I then give the player his Gravity back, and then I just placed gravity Blocks on every entrance and exit of the ladders.
 The whole fighting system, which I viewed as the biggest challenge from the beginning, is entirely new made and of that I am very proud.
 
