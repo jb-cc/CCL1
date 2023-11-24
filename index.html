@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="stylesheets/stylesheet.css">
+	</head>
+    <body>
+		<div id="gameContainer">
+			<div class="gameElement" id="background"></div>
+			<canvas class="gameElement" id="canvas" width="1536" height="768"></canvas>
+		</div>
+		<audio loop muted autoplay id="audio">
+			<source src="/audio/Drunken-Sailor_8bit.wav" type="audio/wav" >
+		  Your browser does not support the audio element.
+		</audio>
+		<div>
+		<img src="images/start_screen1.png" alt="start_screen1.png" id="start1">
+		<img src="images/start_screen2.png" alt="start_screen2.png"id="start2">
+		<img src="images/start_screen3.png" alt="start_screen3.png"id="start3">
+		<img src="images/Controls_screen1.png" alt="Controls_screen1.png"id="control1">
+		<img src="images/Controls_screen2.png" alt="Controls_screen2.png"id="control2">
+		<img src="images/game_over.gif" alt="game_over.gif" id="lose">
+		<img src="images/win_screen.gif" alt="win_screen.gif" id="win">
+		
+		</div>
+		<div>
+			<button id="startBtn">start</button>
+			<button id="controlBtn">controls</button>
+			<button id="backBtn">Back</button>
+		</div>
+    </body>
+	<!-- First: Import the Classes -->
+	<!-- gameManager -->
+	<script src="gameManager.js"></script> 
+	
+	<!-- drawLayer -->
+    <script src="canvas.js"></script> 
+	
+	<!-- helpers -->
+	<script src="helpers/mouseHelper.js"></script>
+	<script src="helpers/gravityHelper.js"></script>
+
+	<!-- gameObjects -->
+    <script src="gameObjects/gameObject.js"></script>
+	<script src="gameObjects/imageObject.js"></script>
+
+    <script src="gameObjects/playerFigure.js"></script> 
+	<script src="gameObjects/obstacle.js"></script>
+    <script src="gameObjects/wall.js"></script>
+	<script src="gameObjects/ladder.js"></script>
+	<script src="gameObjects/stairs.js"></script>
+	<script src="gameObjects/gravityBlock.js"></script>
+	<script src="gameObjects/enemy.js"></script>
+	<script src="gameObjects/captain.js"></script>
+	<script src="gameObjects/coin.js"></script>
+	<script src="gameObjects/coinCounter.js"></script> 
+	<script src="gameObjects/guard.js"></script> 
+	<script src="gameObjects/textbox.js"></script>
+	<script src="gameObjects/prisondoor.js"></script>
+	<script src="gameObjects/healthBar.js"></script>
+	
+	<!-- Second: Start the Setup for the game -->
+	<script src="setup/stageSetup.js"></script> 
+	<script src="setup/inputHandling.js"></script> 
+
+
+	
+
+</html>

@@ -1,0 +1,57 @@
+.gameElement {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1536px;
+    height: 768px;
+}
+
+#background {
+    background: url("../images/Ship_Background.gif");
+    background-size: cover;
+}
+
+#gameContainer {
+    position: relative; 
+    height: 768px;
+}
+
+#start1, #start2, #start3, #control1, #control2, #win, #lose {
+    display: none;
+    object-fit: cover;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 1536px;
+    height: 768px;
+}
+
+#start1 {
+    display: block;
+}
+
+#startBtn, #controlBtn, #backBtn {
+    opacity: 0;
+    width: 400;
+    height: 200;
+}
+
+#startBtn {
+    position: absolute;
+    top: 550;
+    left: 410;
+}
+
+#backBtn {
+    position: absolute;
+    top: 550;
+    left: 300;
+}
+
+#controlBtn {
+    position: absolute;
+    top: 550;
+    left: 810;
+    
+}
+
